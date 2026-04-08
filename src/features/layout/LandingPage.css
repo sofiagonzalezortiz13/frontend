@@ -1,0 +1,95 @@
+:root {
+  --bg: #0a0b10;
+  --card: #16171d;
+  --lila: #a78bfa;
+  --text: #ffffff;
+  --text-dim: #94a3b8;
+}
+
+.landing {
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Tipografía y Hero */
+.hero-accent {
+  /* Forzamos el color morado claro */
+  color: #af97f8 !important; 
+  
+  /* Aseguramos que no tenga fondos raros */
+  background: transparent !important;
+  
+  /* Le damos el estilo elegante del diseño */
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  
+  /* Esto ayuda a que resalte sobre el negro */
+  text-shadow: 0 0 20px rgba(167, 139, 250, 0.4);
+}
+/* Esto forzará el color morado en esa parte específica */
+.hero-accent {
+  color: #a78bfa !important;
+  display: inline !important;
+  background: transparent !important;
+}
+.hero-badge {
+  background: rgba(167, 139, 250, 0.1);
+  color: var(--lila);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* Dashboard Card (Captura 1) */
+.dashboard-preview {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.stat-box {
+  background: rgba(255,255,255,0.03);
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.red { color: #f87171; }
+.green { color: #34d399; }
+
+/* Botón Lila (Captura 1 y 9) */
+.hero-btn-primary, .nav-cta {
+  background-color: var(--lila);
+  color: #000 !important;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Grid de Beneficios (Captura 3) */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.benefit-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.05);
+}

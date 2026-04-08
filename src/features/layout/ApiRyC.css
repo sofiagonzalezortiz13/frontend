@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap');
+
+.ryc-wrapper {
+  min-height: 100vh;
+  background: #0a0a0f;
+  color: #f0eeff;
+  font-family: 'DM Sans', sans-serif;
+  background-image:
+    radial-gradient(ellipse at 10% 30%, rgba(99,74,255,0.08) 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 10%, rgba(255,74,145,0.06) 0%, transparent 45%);
+}
+
+/* ── Nav ── */
+.ryc-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: sticky;
+  top: 0;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(12px);
+  z-index: 50;
+}
+
+.ryc-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: #a78bfa;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.ryc-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ryc-nav-link {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.ryc-nav-link:hover { color: #f0eeff; }
+
+.ryc-nav-cta {
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.ryc-nav-cta:hover { opacity: 0.85; }
+
+/* ── Header ── */
+.ryc-header {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ryc-badge {
+  display: inline-block;
+  background: rgba(167,139,250,0.1);
+  border: 1px solid rgba(167,139,250,0.25);
+  color: #a78bfa;
+  border-radius: 99px;
+  padding: 0.35rem 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.ryc-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ryc-accent {
+  font-style: italic;
+  background: linear-gradient(90deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ryc-desc {
+  color: rgba(255,255,255,0.45);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.ryc-desc strong { color: #a78bfa; }
+
+.ryc-tech-pills {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.pill {
+  background: rgba(167,139,250,0.08);
+  border: 1px solid rgba(167,139,250,0.2);
+  color: #a78bfa;
+  border-radius: 99px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* ── Code block ── */
+.ryc-code-block {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.code-header {
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.preview-dots { display: flex; gap: 0.4rem; }
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.code-filename {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.35);
+  font-family: monospace;
+}
+
+.code-body {
+  padding: 1.25rem;
+  font-family: monospace;
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: #addb67;
+  white-space: pre-wrap;
+}
+
+/* ── Count ── */
+.ryc-count {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 1.5rem;
+}
+
+/* ── States ── */
+.ryc-state {
+  text-align: center;
+  padding: 4rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.ryc-state.error { color: #ff6b6b; }
+
+.ryc-loader {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(167,139,250,0.2);
+  border-top-color: #a78bfa;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Grid ── */
+.ryc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+/* ── Card ── */
+.ryc-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+  animation: fadeIn 0.3s ease;
+}
+
+.ryc-card:hover {
+  border-color: rgba(167,139,250,0.35);
+  transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ryc-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.ryc-card-body { padding: 1.1rem; }
+
+.ryc-char-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #f0eeff;
+}
+
+.ryc-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.75rem;
+}
+
+.ryc-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ryc-label {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.15rem;
+}
+
+.ryc-location {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.65);
+}
+
+/* ── CTA ── */
+.ryc-cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.ryc-cta p {
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.ryc-cta-btn {
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 0.85rem 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.ryc-cta-btn:hover { opacity: 0.88; transform: translateY(-2px); }
+
+@media (max-width: 600px) {
+  .ryc-nav { padding: 1rem 1.25rem; }
+  .ryc-grid { grid-template-columns: 1fr; }
+}

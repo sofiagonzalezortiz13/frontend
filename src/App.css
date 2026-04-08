@@ -1,0 +1,65 @@
+/* Estilos generales para los componentes de tu Gestor */
+
+/* 1. Botón Principal (Verde) */
+.btn-primary {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #219150;
+}
+
+/* 2. Inputs consistentes */
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* 3. Estilos para la tabla */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #eee;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background-color: #fcfcfc;
+}
