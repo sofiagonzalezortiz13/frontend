@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Configura la URL base de tu backend (ajusta el puerto si es necesario)
-const API_URL = "http://localhost:3000/api/auth";
+const API_URL = "https://backend-e6v4.onrender.com/api";
 
 // ✅ EXPORTAR LOGIN
 export const loginRequest = async (user) => {
