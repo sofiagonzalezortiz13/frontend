@@ -1,12 +1,8 @@
 import axios from "axios";
 
-// La URL base de tu API en Render
-const API_URL = "https://backend-e6v4.onrender.com/api";
-/**
- * ✅ REGISTER REQUEST
- * Antes: /api/register (404)
- * Ahora: /api/auth/register (Correcto)
- */
+
+const API_URL = "https://backend-1-ct66.onrender.com/api";
+
 export const registerRequest = async (user) => {
   return await axios.post(`${API_URL}/auth/register`, user);
 };

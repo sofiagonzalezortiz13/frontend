@@ -16,7 +16,8 @@ export default defineConfig({
         "penguin.png", 
         "world.png",
         "vite.svg",
-        "robots.txt"
+        "robots.txt",
+        "pajaro.png"
       ],
       workbox: {
         navigateFallback: "/index.html",
@@ -26,23 +27,23 @@ export default defineConfig({
       manifest: {
         name: "Mi PWA",
         short_name: "PWA",
-        description: "Aplicación web progresiva creada para buscar un mejor control para tus gastos de tu vida pesada",
+        description: "De la carga al control: Tu aliado digital para equilibrar tus gastos y potenciar tus ahorros.",
         start_url: "/",
         display: "standalone",
         background_color: "#ffffff",
         theme_color: "#000000",
         screenshots: [
           {
-            src: "/img/auww.png",
+            src: "/img/pajaro.png",
             // Subimos el tamaño declarado a 512x512 para cumplir con el mínimo de 320px
-            sizes: '360x360', 
+            sizes: '1024x1024', 
             type: 'image/png',
             form_factor: 'narrow',
             label: "Vista Móvil"
           },
           {
-            src: '/img/auww.png',
-            sizes: '360x360',
+            src: '/img/pajaro.png',
+            sizes: '1024x1024',
             type: 'image/png',
             form_factor: 'wide',
             label: "Vista Escritorio"

@@ -1,6 +1,6 @@
 import axios from 'axios';
 const api = axios.create({
-baseURL: import.meta.env.VITE_API_URL || 'https://backend-e6v4.onrender.com/api',
+baseURL: import.meta.env.VITE_API_URL ||'https://backend-1-ct66.onrender.com/api', // Asegúrate de que esta URL sea correcta
 headers: { 'Content-Type': 'application/json' },
 });
 // Interceptor para adjuntar el token si existe:
